@@ -1,2 +1,188 @@
+<html>
+    
+<link href="bootstrap.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<link href="responsive.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
 
-<html><body>Hello World</body></html>
+
+
+<div class="buy_function_top_wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="logo_buy_function"> 
+          <p align="center" > <B><h2>EL JUEGO DE LA KODICIA</h2></B> </p>
+          <img src="img/kodicia.jpg">
+           <p> <B>Bienvenido! Recuerde que recomendamos participar solamente con lo que usted este dispuesto a arriesgar o eventualmente perder. Cuando usted entra a este juego esta aceptando realizar descuentos del 20 % de sus compras/ventas/transferencias y a su vez recibira el mismo monto de quienes ingresen despues de usted. Todos los dividendos se distribuyen entre los participantes, proporcionalmente a los saldos KOD de las billeteras. (Todos los acentos se omiten en este documento) </B> </p>
+          <p><b><a href="https://kodicia.com/">www.kodicia.com</a></b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content_wrapper">
+<div class="container">
+ <div class="row">
+		<div class="column masternode hidden" style="text-align: center;">
+			<h2>Usted ya es propitario de un  <a id="masternode-link" href="/?masternode=0x">masternodo</a>.</h2>
+			<p>Su saldo disponible de tokens le permite obtener beneficios de su Masternodo! <br> Usted recibira el <b>7% del total</b> de beneficios del juego cuando sus referidos realicen cualquier transaccion!</p>
+			<div class="link">
+				<b><span>Su link de masternodo es</span>
+				<a href="/?masternode=0x">https://kodicia.github.io/index.html?masternode=0x123456</a></b>
+			</div>
+			<div class="ui divider"></div>
+		</div>
+	</div>
+</div>
+<div class="buy_and_sell_wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="transition-box buy">
+          <div class="transition-box-inner">
+            <div class="transition_image">
+              <h2>COMPRAR</h2>
+            </div>
+            <div class="transition_title">
+              <p>Unidades = Ethereum</p>
+              <p>Nota: Verifique <a href="https://ethgasstation.info/" target="#blank">aqui</a> la cantidad minima de Gas para que su transaccion sea mas rapida.</p>
+            </div>
+            <hr>
+            <div class="eth_purchase_box"> <span class="token_value buyPrice">0 eth/token</span>
+              <input type="text" placeholder="0.05">
+              <span class="approx input_label">Escriba el valor en ETH ...</span>
+              <button class="transition_submit">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="transition-box sell">
+          <div class="transition-box-inner">
+            <div class="transition_image">
+              <h2>VENDER</h2>
+            </div>
+            <div class="transition_title">
+              <p>Unidades = KOD Token</p>
+              <p>Nota: Verifique <a href="https://ethgasstation.info/" target="#blank">aqui</a> la cantidad minima de Gas para que su transaccion sea mas rapida.</p>
+            </div>
+            <hr>
+            <div class="eth_purchase_box"> <span class="token_value sellPrice">0 eth/token</span>
+              <input type="text" placeholder="0.05">
+              <span class="approx input_label">Escriba el valor en KOD ...</span>
+              <button class="transition_submit">Vender</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="holdings">
+  <div class="container">
+    <h2 class="section_title">HOLDINGS</h2>
+    <div class="row">
+      <div class="col-md-4 col-sm-4 col-sx-12">
+        <div class="holdings_box">
+          <h3>Global</h3>
+          <div class="image_box"> <img src="img/eth.png"> </div>
+          <span id="ethInContract">0 eth in contract.</span>
+          <div > <img src="img/logo.png"> </div>
+          <span id="tokensInCirculation">0 tokens in circulation.</span> </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-sx-12">
+        <div class="holdings_box">
+          <h3>Wallet</h3>
+          <div class="wallet_wrapper">
+            <div class="wallet_box" id="myTokens"> <span>Tokens</span>
+              <p>(KOD)</p>
+              <span class="count">0.0000</span>
+              <p class="converted">(0.00 USDT)</p>
+            </div>
+            <div class="wallet_box no-border" id="myDividends"> <span>Dividendos</span>
+              <p>(ETH)</p>
+              <span class="count">0.0000</span>
+              <p class="converted">(0.00 USDT)</p>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-sx-12">
+        <div class="holdings_box">
+          <h3>Acciones</h3>
+         <div class="action-btn-set"> 
+         <button id="reinvest" class="active_btn">Reinvertir Dividendos</button>
+          <button id="withdraw" class="active_btn">Retirar Dividendos</button>
+          <a href="https://ropsten.etherscan.io/address/0xdc8f359b6a458331737bf6dfecb09d15e90d4db4" target="_new"  class="active_btn">Ver Etherscan</a> 
+             </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="Transfer_wrapper">
+  <div class="container">
+    <div class="transfer_wrapper_box transfer"> <img src="img/transfer.png">
+      <h2 class="section_title">TRANSFERIR</h2>
+      <p>La transferencia se realiza en KOD. Recuerde que al transferir tokens cambia su porcentaje de dividendos!</p>
+      <div class="ui centered grid">
+        <div class="six wide column">
+          <form class="ui form">
+            <div class="field">
+              <input type="text" id="transferAddress" placeholder="Address.." class="form-control">
+            </div>
+          </form>
+        </div>
+        <div class="six wide column">
+          <form class="ui form">
+            <div class="field">
+              <input type="text" id="transferTokenCount" placeholder="Tokens.."  class="form-control">
+            </div>
+          </form>
+        </div>
+        <div class="column" style="text-align: center;"> <span class="approx">Es muy ... muy importante que verifique bien la direccion y el monto de destino</span> </div>
+        <div class="row">
+          <div class="six wide column">
+            <button class="ui right labeled massive icon button"> <i class="right arrow icon"></i> TRANSFERIR </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--purchase-token-wrapper END--> 
+
+ 	  
+      
+<div class="ui active inverted dimmer" id="loadingSpinner">
+       <div class="ui loader"> 
+           <div class="sk-cube-grid">
+                <div class="sk-cube sk-cube1"></div>
+                <div class="sk-cube sk-cube2"></div>
+                <div class="sk-cube sk-cube3"></div>
+                <div class="sk-cube sk-cube4"></div>
+                <div class="sk-cube sk-cube5"></div>
+                <div class="sk-cube sk-cube6"></div>
+                <div class="sk-cube sk-cube7"></div>
+                <div class="sk-cube sk-cube8"></div>
+                <div class="sk-cube sk-cube9"></div>
+              </div>
+              
+            <div class="ui massive text loader" id="loadingText"><span>Connecting with metamask...</span>
+               <noscript>You need to enable JavaScript to run this app.</noscript>
+            </div>
+        </div>
+</div>
+<!--LOADER END--> 
+ 
+</div>  
+<script src="lib/ls.js"></script> 
+<script src="lib/alertify.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.5.1/bluebird.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.js"></script> 
+<script src="lib/web3.min.js"></script> 
+<script src="lib/buy.js"></script>
+</html>
